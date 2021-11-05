@@ -1,18 +1,16 @@
 /*! Place your custom styles here */
 
 .message {
-    min-height: 33px;
-    padding: 8px 2px 10px 2px !important;
-    border-radius: 5px;
+    display: none;
+}
+
+.calendar-message {
     display: none;
 }
 
 .credits, .credits a, .credits_mob, .credits_mob a {
-    clear: both;
-    float: none;
-    text-align: right;
-    margin-right: 5px;
-    color: #ccc!important;
-    text-decoration: none!important;
     display: none;
 }
+
+.credits {
+    display: none;
