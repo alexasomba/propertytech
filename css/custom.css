@@ -1,17 +1,5 @@
 /*! Place your custom styles here */
 
-.message {
-    display: none;
-}
-
-.calendar-message {
-    display: none;
-}
-
-.credits, .credits a, .credits_mob, .credits_mob a {
-    display: none;
-}
-
-.credits {
+.message, .calendar-message, .credits, .credits a, .credits_mob, .credits_mob a {
     display: none;
 }
