@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>21b Akarigbere Booking Calendar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .accordion {
   background-color: #eee;
@@ -30,33 +29,53 @@
 </style>
 </head>
 <body>
-    <button class="accordion">Studio 2 - Studio Apartment</button>
-    <div class="panel">
-        <p>
-            <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
-        </p>
-    </div>
 
-    <button class="accordion">Studio 3 - Studio Apartment</button>
-    <div class="panel">
-        <p>
-            <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
-        </p>
-    </div>
+<h2>21b Akarigbere Apartments Calendar Availability</h2>
 
-    <button class="accordion">Studio 4 - Studio Apartment</button>
-    <div class="panel">
-        <p>
-            <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
-        </p>
-    </div>
+<button class="accordion">Studio 2 - Studio Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
+    </p>
+</div>
 
-    <button class="accordion">Unit 5 - 1 Bedroom Apartment</button>
-    <div class="panel">
-        <p>
-            <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
-        </p>
-    </div>
+<button class="accordion">Studio 3 - Studio Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
+    </p>
+</div>
+
+<button class="accordion">Studio 4 - Studio Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
+    </p>
+</div>
+
+<button class="accordion">Unit 5 - 1 Bedroom Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
+    </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
-
 </html>
