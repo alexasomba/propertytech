@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apartment Availability Calendars for 21b Akarigbere, Victoria Island, Lagos, Nigeria.</title>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+</head>
+<body>
+
+<h2>Apartment Availability Calendars for 21b Akarigbere, Victoria Island, Lagos, Nigeria.</h2>
+
+<button class="accordion">Studio 2 - Studio Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68258/calendar" frameborder="0"></iframe>
+    </p>
+</div>
+
+<button class="accordion">Studio 3 - Studio Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68260/calendar" frameborder="0"></iframe>
+    </p>
+</div>
+
+<button class="accordion">Studio 4 - Studio Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68257/calendar" frameborder="0"></iframe>
+    </p>
+</div>
+
+<button class="accordion">Unit 5 - 1 Bedroom Apartment</button>
+<div class="panel">
+    <p>
+        <iframe style="overflow:hidden;display:block;margin:0 auto;width:100%;min-height:442px;border:none" src="https://www.houfy.com/embed/68259/calendar" frameborder="0"></iframe>
+    </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
